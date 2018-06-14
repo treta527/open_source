@@ -8,7 +8,7 @@ python:
 
 install:
   # Install dependencies
-  - pip install click flake8 pytest tox 
+  - pip install click flake8 pytest pytest-cov
   # Install this package
   - python setup.py develop
 
@@ -16,5 +16,4 @@ install:
 script:
   # Run linter checks
   - flake8
-  # Run tests
-  - tox
+  - pytest tests/ --cov=open_source -v
