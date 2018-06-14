@@ -3,17 +3,12 @@ Open Source
 ===========
 
 
-.. image:: https://img.shields.io/pypi/v/open_source.svg
-        :target: https://pypi.python.org/pypi/open_source
-
 .. image:: https://img.shields.io/travis/goanpeca/open_source.svg
         :target: https://travis-ci.org/goanpeca/open_source
 
-.. image:: https://readthedocs.org/projects/open-source/badge/?version=latest
-        :target: https://open-source.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
 
-
+.. image:: https://codecov.io/gh/goanpeca/open_source/branch/master/graph/badge.svg
+        :target: https://codecov.io/gh/goanpeca/open_source
 
 
 A package to test some open source workflows
@@ -23,10 +18,33 @@ A package to test some open source workflows
 * Documentation: https://open-source.readthedocs.io.
 
 
-Features
---------
+Install
+-------
 
-* TODO
+* Fork and run from root directory.
+
+.. code-block:: bash
+
+   $ python setup.py develop
+
+
+Run tests
+---------
+
+.. code-block:: bash
+
+   $ pytest tests/ --cov=open_source -v
+
+Use
+---
+
+.. code-block:: bash
+
+   $ open_source --help
+   $ open_source check_palindrom oso
+   $ open_source random_int 0 10
+   $ open_source random_letter
+   $ open_source random_letter word
 
 Credits
 -------
