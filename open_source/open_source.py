@@ -15,9 +15,9 @@ def check_palindrome(word):
 def random_letter(word=None):
     """Return a random letter of the alphabet."""
     if word:
-        letters = string.ascii_letters
-    else:
         letters = word
+    else:
+        letters = string.ascii_letters
 
     index = random.randint(0, len(letters))
     return letters[index]
@@ -25,3 +25,4 @@ def random_letter(word=None):
 
 def random_int(lower, upper):
     """Return a random integer from the alphabet."""
+    return random.randint(lower, upper)
