@@ -8,7 +8,7 @@ python:
 
 install:
   # Install dependencies
-  - pip install click flake8 pytest pytest-cov
+  - pip install click codecov flake8 pytest pytest-cov
   # Install this package
   - python setup.py develop
 
@@ -17,3 +17,6 @@ script:
   # Run linter checks
   - flake8
   - pytest tests/ --cov=open_source -v
+
+after_success:
+  - codecov
