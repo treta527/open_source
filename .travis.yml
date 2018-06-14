@@ -4,13 +4,17 @@ language: python
 python:
   - 3.6
   - 3.5
-  - 3.4
   - 2.7
 
-# Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
-install: pip install -U tox-travis
+install:
+  # Install dependencies
+  - pip install click flake8 pytest tox 
+  # Install this package
+  - python setup.py develop
 
 # Command to run tests, e.g. python setup.py test
-script: tox
-
-
+script:
+  # Run linter checks
+  - flake8
+  # Run tests
+  - tox
