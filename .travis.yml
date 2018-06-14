@@ -15,7 +15,7 @@ install:
 # Command to run tests, e.g. python setup.py test
 script:
   # Run linter checks
-  - flake8
+  - flake8 open_source/
   - pytest tests/ --cov=open_source -v
 
 after_success:
