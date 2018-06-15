@@ -41,7 +41,7 @@ Use
 .. code-block:: bash
 
    $ open_source --help
-   $ open_source check_palindrom oso
+   $ open_source check_palindrome oso
    $ open_source random_int 0 10
    $ open_source random_letter
    $ open_source random_letter word
